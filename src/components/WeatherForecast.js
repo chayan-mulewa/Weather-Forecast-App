@@ -130,8 +130,8 @@ function WeatherForecast() {
     // );
 
     return (
-        <div className="h-full w-full flex flex-col items-center justify-center bg-gray-400">
-            <div className="p-20 bg-gray-400">
+        <div className="h-full w-full flex flex-col items-center justify-center bg-gray-800">
+            <div className="p-20 bg-gray-800">
                 <h1 className="text-3xl mb-4 text-center">
                     Weather Forecast
                 </h1>
@@ -190,10 +190,10 @@ function WeatherForecast() {
                     </div>
 
                     <div className="text-center mt-4">
-                        <h1 className="text-gray-600">
+                        <h1 className="text-gray-400">
                             Note : For the best experience, search only city names.
                         </h1>
-                        <h1 className="text-gray-600">
+                        <h1 className="text-gray-400">
                             Developer : Chayan Mulewa
                         </h1>
                     </div>
