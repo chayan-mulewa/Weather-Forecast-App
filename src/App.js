@@ -1,13 +1,11 @@
 import { React } from 'react';
-import WeatherForecast from './components/WeatherForecast.js';
-import Index from './index.css'
+import WeatherForecast from './components/WeatherForecast.jsx';
+import './index.css'
 
 function App() {
-  
+
   return (
-    <div className="Index">
-      <WeatherForecast/>
-    </div>
+    <WeatherForecast />
   );
 }
 
