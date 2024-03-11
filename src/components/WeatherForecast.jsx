@@ -75,7 +75,7 @@ function WeatherForecast() {
                     <input className='w-full flex-grow px-4 py-2 text-black rounded-lg md:w-auto' type='text' placeholder='City' onChange={updateCity} />
                     <button className='w-full px-6 py-2 border rounded-lg backdrop-blur-sm md:w-auto' onClick={searchCity}>Search</button>
                 </div>
-                <div className='grid grid-cols-2 justify-center place-content-center place-items-center items-center gap-6 p-2 rounded-lg border backdrop-blur-sm md:grid-cols-5 sm:grid-cols-2'>
+                <div className='grid grid-cols-2 justify-center place-content-center place-items-center items-center gap-6 p-10 rounded-lg border backdrop-blur-sm md:grid-cols-5 sm:grid-cols-2'>
                     <Card label="Location" value={name} icon={require('../assets/location.png')} />
                     <Card label="Temperature" value={finalTemp} icon={require('../assets/temperature.png')} />
                     <Card label="Date" value={date} icon={require('../assets/date.png')} />
@@ -87,10 +87,7 @@ function WeatherForecast() {
                     <Card label="Sunrise" value={sunrise} icon={require('../assets/sunrise.png')} />
                     <Card label="Sunset" value={sunset} icon={require('../assets/sunset.png')} />
                 </div>
-                <div className='flex flex-col justify-center items-center gap-6 mt-4'>
-                    <h1 className=''>
-                        Note : For optimal results, narrow your search to simply city names.
-                    </h1>
+                <div className='w-fit flex flex-col justify-center items-center gap-6 mt-4'>
                     <h1 className=''>
                         Develop By Chayan Mulewa
                     </h1>
