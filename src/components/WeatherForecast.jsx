@@ -70,25 +70,25 @@ function WeatherForecast() {
     
     return (
         <div style={containerStyle} className='min-h-screen min-w-screen flex flex-col justify-center items-center overflow-auto'>
-            <div className='h-full w-full flex flex-col gap-4 p-4 justify-center items-center overflow-auto'>
+            <div className='h-full w-full flex flex-col gap-6 p-4 justify-center items-center overflow-auto'>
                 <div className='flex flex-col justify-center items-center gap-6 md:flex-row'>
-                    <input className='w-full flex-grow px-4 py-2 text-black rounded-lg md:w-auto' type='text' placeholder='City' onChange={updateCity} />
-                    <button className='w-full px-6 py-2 border rounded-lg backdrop-blur-sm md:w-auto' onClick={searchCity}>Search</button>
+                    <input className='w-full flex-grow px-4 py-2 text-black rounded-lg text-xl md:w-auto' type='text' placeholder='City' onChange={updateCity} />
+                    <button className='w-full px-6 py-2 border rounded-lg backdrop-blur-sm text-xl md:w-auto' onClick={searchCity}>Search</button>
                 </div>
-                <div className='grid grid-cols-2 justify-center place-content-center place-items-center items-center gap-6 p-10 rounded-lg border backdrop-blur-sm md:grid-cols-5 sm:grid-cols-2'>
+                <div className='grid grid-cols-2 justify-center place-content-center place-items-center items-center gap-6 p-4 rounded-lg border backdrop-blur-sm md:grid-cols-5 sm:grid-cols-2'>
                     <Card label="Location" value={name} icon={require('../assets/location.png')} />
                     <Card label="Temperature" value={finalTemp} icon={require('../assets/temperature.png')} />
                     <Card label="Date" value={date} icon={require('../assets/date.png')} />
                     <Card label="Time" value={time} icon={require('../assets/time.png')} />
-                    <Card label="Weather Type" value={type} icon={require('../assets/weather.png')} />
+                    <Card label="Weather Type" value={type} icon={getWeatherForecastIcon(icon)} />
                     <Card label="Humidity" value={humidity} icon={require('../assets/humidity.png')} />
                     <Card label="Pressure" value={pressure} icon={require('../assets/pressure.png')} />
                     <Card label="Wind" value={wind} icon={require('../assets/wind.png')} />
                     <Card label="Sunrise" value={sunrise} icon={require('../assets/sunrise.png')} />
                     <Card label="Sunset" value={sunset} icon={require('../assets/sunset.png')} />
                 </div>
-                <div className='w-fit flex flex-col justify-center items-center gap-6 mt-4'>
-                    <h1 className=''>
+                <div>
+                    <h1 className='text-xl'>
                         Develop By Chayan Mulewa
                     </h1>
                 </div>
